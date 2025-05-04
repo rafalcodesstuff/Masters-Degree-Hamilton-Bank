@@ -1,0 +1,254 @@
+/* https://colormagic.app/palette/6741f3daed1554d4dbaec9c9 */
+
+/* #000000 */
+/* #7a7e85 */
+/* #a0a2a7 */
+/* #bfc1c4 */
+/* #e1e3e5 */
+/* #f3f5f6 */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.1) #000;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #f3f5f6;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.link-no-decoration {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* .container {
+    display: flex;
+    height: 100%;
+} */
+
+.container-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-primary {
+    background-color: #e1e3e5;
+    border: none;
+    color: #000;
+    padding: 0.7em 1.3em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-right: 0.7em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    font-size: 1em;
+}
+
+.button-primary:hover {
+    color: #f3f5f6;
+    background-color: #7a7e85;
+}
+
+.button-primary:active {
+    background-color: #000;
+}
+
+#home-section {
+    background-color: white;
+    height: 160vw;
+}
+
+#bank-name {
+	font-weight: 900;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	margin-left: 2em;
+}
+
+/* https://getcssscan.com/css-box-shadow-examples */
+#nav-bar {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 0px 0px 3em 3em;
+    padding: 2em 2em 2em 2em;
+    /* border-bottom: 2px solid black; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 40px;
+    width: 100%;
+
+    position: fixed;
+    z-index: 1;
+}
+
+#quotes-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 60%;
+    padding: 12px 12px 12px 24px;
+	margin-left: 4em;
+    z-index: 0;
+}
+
+#carousel-container {
+
+}
+
+#promotions-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+}
+
+#promotion-wrapper {
+    margin-top: 5px;
+    width: 100%;
+}
+
+#first-promotion-wrapper1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 0 24px 0 8px;
+}
+
+#first-promotion-wrapper2 {
+    flex: 1;
+    margin: 20px 10% 0 0;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+}
+  
+.accordion-container {
+  	width: 100%;
+}
+
+#about-section {
+    background-image: radial-gradient(ellipse farthest-corner at 0 180%, #eee 0%, #f3f3f3 70%, #fff 70%);
+}
+
+#services-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#offers-section {
+	height: 160%;
+}
+
+#offers-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.offers-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 12px 0 12px 0;
+}
+
+#assistant-image {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+
+
+
+
+
+  /* section .air{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+    background-size: 1000px 100px
+  }
+  section .air.air1{
+    animation: wave 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+  }
+  section .air.air2{
+    animation: wave2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+  }
+  section .air.air3{
+    animation: wave 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+  }
+  section .air.air4{
+    animation: wave2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+  }
+  @keyframes wave{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: 1000px; 
+    }
+  }
+  @keyframes wave2{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: -1000px; 
+    }
+  } */
+
+/* .section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; 
+}
+
+.animated-element {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: transform 0.3s ease;
+} */

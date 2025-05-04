@@ -1,0 +1,23 @@
+.parallax {
+    background-image: url('../images/unsplash1.jpg');
+
+    height: 100%; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-hamilton {
+    background-image: url('../images/hamilton2.jpg');
+
+    height: 100%; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: -1;
+}

@@ -1,0 +1,94 @@
+.payment-wrapper {
+    color: #fff;
+    margin: 0;
+    font: 400 0.875em 'Helvetica Neue', 'Roboto Sans', Helvetica, Arial, Sans-serif;
+    /* height: 20em;
+    width: 400px; */
+    perspective: 300px;
+}
+.paymentcard, .paymentcards .payment-face, .paymentcards .payment-back {
+    /* background: linear-gradient(#8c8c8c, #737373); */
+    background-image: radial-gradient(ellipse farthest-corner at 0 140%, #3c84cc 0%, #316dc2 70%, #4e95d3 70%);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20em;
+    width: 34em;
+    padding: initial;
+}
+.paymentcards .payment-face .payment-head {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 16px 0 16px;
+}
+.paymentcards .payment-face .payment-head .payment-title {
+    font-weight: 600;
+    font-size: 20px;
+}
+.paymentcards .payment-face .payment-main {
+    margin: 16px 16px 0 16px;
+}
+.paymentcards .payment-face .payment-main .number-payment-title {
+    color: #ccc;
+}
+.paymentcards .payment-face .payment-main .payment-number {
+    font-size: 24px;
+}
+.paymentcards .payment-face .payment-dates {
+    display: flex;
+    max-width: 100px;
+    justify-content: space-between;
+    margin: 16px 16px 16px 16px;
+}
+.paymentcards .payment-back {
+    animation: demo 3s ease-in-out;
+    transform: translateX(0) translateY(0);
+    transition: transform 1s;
+    background: linear-gradient(#828282, dimgrey);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    padding: initial;
+}
+.paymentcards .payment-back .magnetic-line {
+    background: #000;
+    margin-top: 16px;
+    height: 32px;
+    width: 100%;
+    padding: initial;
+}
+.paymentcards .payment-back .cvv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    margin: 0 16px 66.6666666667px 0;
+    text-align: end;
+    padding-right: 8px;
+    width: 235.6666666667px;
+    height: 24px;
+}
+.paymentcards:hover .payment-back {
+    transform: translateX(170px) translateY(-50px);
+    transition: transform 1s;
+}
+
+@keyframes demo {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    50% {
+        transform: translateX(170px) translateY(-50px);
+    }
+    75% {
+        transform: translateX(170px) translateY(-50px);
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+

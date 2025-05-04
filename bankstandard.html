@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<payment-head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="bankstandard.css">
+    <link rel="stylesheet" href="accordion/accordion.css">
+    <link rel="stylesheet" href="sidebarnav/sidebar.css">
+    <link rel="stylesheet" href="parallax/parallax.css">
+    <link rel="stylesheet" href="paymentcard/paymentcard.css">
+    <link rel="stylesheet" href="blockquote/blockquote.css">
+    <link rel="stylesheet" href="carousel/carousel.css">
+    <link rel="stylesheet" href="modal/modal.css">
+    <link rel="stylesheet" href="chat-questionare/chat-questionare.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="registration.css">
+
+    <!-- 
+    dev log 06/04/2025
+    Today I realized that I could make the banking website like an old Times Newspaper
+    
+    -->
+</payment-head>
+<body>
+    <!-- https://dribbble.com/shots/25431387-Stellar-Modern-Website-UI-UX-Design-for-Banking -->
+    
+    <!-- https://dribbble.com/shots/25544170-Banking-and-payment-web-UI-design -->
+
+
+    <nav class="side-nav">
+        <a href="#home-section" class="link-no-decoration"><div class="nav-dot"></div></a>
+        <a href="#about-section" class="link-no-decoration"><div class="nav-dot"></div></a>
+        <a href="#about-section" class="link-no-decoration"><div class="nav-dot"></div></a>
+        <a href="#about-section" class="link-no-decoration"><div class="nav-dot"></div></a>
+    </nav>
+
+    <!-- bach perfect for this  -->
+    <!-- https://www.youtube.com/watch?v=F1C9ZR03ASM -->
+    <!-- this reminds me of hollow knight pure knight and pale palace + sealed vessel ost  -->
+    <!-- this website is based of the pale palace  -->
+
+    <section id="home-section">
+        <nav id="nav-bar">
+            <div class="container-flex-row">
+                <h1 id="bank-name">Hamilton Bank</h1>
+            </div>
+
+            <div class="container-flex-row" style="height: 8em;">
+                <img src="/images/jsb.jpg" alt="">
+            </div>
+            <div class="container-flex-row">
+                <button class="button-primary"><a href="#home-section" class="link-no-decoration">Home</a></button>
+                <button class="button-primary"><a href="#about-section" class="link-no-decoration">About</a></button>
+                <button class="button-primary">Contact</button>
+                <button class="button-primary">Sign up for free</button>
+            </div>
+        </nav>
+        <div class="parallax-hamilton">
+            <div id="quotes-container">
+                <br style="margin: 15vw 0 15vw 0;">
+
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/F1C9ZR03ASM?si=UKunb2jm1mVXXiHX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+                <br style="margin: 15vw 0 15vw 0;">
+
+                <div class="block-quote">
+                    <q>What is the most sacred duty and the greatest source of our security in a Republic? An inviolable respect for the Constitution and Laws.</q>
+                    <footer>Alexander Hamilton</footer>
+                </div>
+
+                <br style="margin: 15vw 0 15vw 0;">
+
+                <!-- https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=testimonial-carousel-with-quote-icon -->
+                <!-- TODO add accousel of testimonials -->
+
+                <div class="accordion-container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2 class="carousel-heading">What <b>our customers</b> are saying</h2>
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                <!-- Carousel indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                </ol>
+                                <!-- Wrapper for carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="media">
+                                                    <div class="media-left d-flex mr-3">
+                                                        <a href="#">
+                                                            <img src="images/washington.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="testimonial">
+                                                            <p>Lorem ipsum dolor sit amet, consec adipiscing elit. Nam eusem scelerisque tempor, varius quam luctus dui. Mauris magna metus nec.</p>
+                                                            <p class="overview"><b>George Washington</b>, Founding Father and first U.S. president (1789–1797)</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="media">
+                                                    <div class="media-left d-flex mr-3">
+                                                        <a href="#">
+                                                            <img src="images/ThomasJefferson.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="testimonial">
+                                                            <p>Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra.</p>
+                                                            <p class="overview"><b>Thomas Jefferson</b>, President of the United States (1801-1809)</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="media">
+                                                    <div class="media-left d-flex mr-3">
+                                                        <a href="#">
+                                                            <img src="/images/BenjaminFranklin.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="testimonial">
+                                                            <p>Lorem ipsum dolor sit amet, consec adipiscing elit. Nam eusem scelerisque tempor, varius quam luctus dui. Mauris magna metus nec.</p>
+                                                            <p class="overview"><b>Benjamin Franklin</b>, American polymath and statesman</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="media">
+                                                    <div class="media-left d-flex mr-3">
+                                                        <a href="#">
+                                                            <img src="/images/AndrewJackson.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="testimonial">
+                                                            <p>Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra.</p>
+                                                            <p class="overview"><b>Andrew Jackson</b>, President of the United States from (1829-1837)</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>			
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="media">
+                                                    <div class="media-left d-flex mr-3">
+                                                        <a href="#">
+                                                            <img src="/examples/images/clients/5.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="testimonial">
+                                                            <p>Lorem ipsum dolor sit amet, consec adipiscing elit. Nam eusem scelerisque tempor, varius quam luctus dui. Mauris magna metus nec.</p>
+                                                            <p class="overview"><b>Martin Sommer</b>, UX Analyst</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="media">
+                                                    <div class="media-left d-flex mr-3">
+                                                        <a href="#">
+                                                            <img src="/examples/images/clients/6.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="testimonial">
+                                                            <p>Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra.</p>
+                                                            <p class="overview"><b>John Williams</b>, Web Developer</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>			
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br style="margin: 15vw 0 25vw 0;">
+
+                <div class="block-quote">
+                    <q>A promise must never be broken.</q>
+                    <footer>Alexander Hamilton</footer>
+                </div>
+
+                <br style="margin: 15vw 0 25vw 0;">
+            </div>
+        </div>
+    </section>
+    <section id="about-section">
+        <div id="promotions-container">
+            <div id="first-promotion-wrapper1">
+                
+                <!-- https://codepen.io/AlexKP/pen/gmONOZ -->
+                <div class="payment-wrapper">
+                    <div class="paymentcards">
+                        <div class="payment-face">
+                            <div class="payment-head">
+                                <div class="payment-title">
+                                    Credit card
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="card__logo" width="70" height="20" viewBox="0 0 175.7 53.9">
+                                    <style>
+                                        .visa {
+                                            fill: #fff;
+                                        }
+                                    </style>
+                                    <path class="visa" d="M61.9 53.1l8.9-52.2h14.2l-8.9 52.2zm65.8-50.9c-2.8-1.1-7.2-2.2-12.7-2.2-14.1 0-24 7.1-24 17.2-.1 7.5 7.1 11.7 12.5 14.2 5.5 2.6 7.4 4.2 7.4 6.5 0 3.5-4.4 5.1-8.5 5.1-5.7 0-8.7-.8-13.4-2.7l-2-.9-2 11.7c3.3 1.5 9.5 2.7 15.9 2.8 15 0 24.7-7 24.8-17.8.1-5.9-3.7-10.5-11.9-14.2-5-2.4-8-4-8-6.5 0-2.2 2.6-4.5 8.1-4.5 4.7-.1 8 .9 10.6 2l1.3.6 1.9-11.3M164.2 1h-11c-3.4 0-6 .9-7.5 4.3l-21.1 47.8h14.9s2.4-6.4 3-7.8h18.2c.4 1.8 1.7 7.8 1.7 7.8h13.2l-11.4-52.1m-17.5 33.6c1.2-3 5.7-14.6 5.7-14.6-.1.1 1.2-3 1.9-5l1 4.5s2.7 12.5 3.3 15.1h-11.9zm-96.7-33.7l-14 35.6-1.5-7.2c-2.5-8.3-10.6-17.4-19.6-21.9l12.7 45.7h15.1l22.4-52.2h-15.1"
+                                    />
+                                    <path fill="#F7A600" d="M23.1.9h-22.9l-.2 1.1c17.9 4.3 29.7 14.8 34.6 27.3l-5-24c-.9-3.3-3.4-4.3-6.5-4.4"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="payment-main">
+                                <div class="number-payment-title">card number:</div>
+                                <div class="payment-number">XXXX-XXXX-XXXX-XXXX</div>
+                            </div>
+                            <div class="payment-dates">
+                                <div class="start">
+                                    02/17
+                                </div>
+                                <div class="end">
+                                    01/21
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-back">
+                            <div class="magnetic-line">
+                            </div>
+                            <div class="cvv">
+                                CVV: 123
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="first-promotion-wrapper2">
+                <div class="accordion-container">
+                    <div class="accordion accordion-active">
+                        <div class="accordion-header">
+                            <b>Innovative</b>
+                            <b class="toggle-symbol">–</b>
+                        </div>
+                        <p class="accordion-panel" style="display: block;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius animi ducimus deleniti reiciendis nihil, libero, ab rem dolores corporis ipsum laboriosam, mollitia delectus cum amet at laudantium possimus magnam soluta.</p>
+                    </div>
+                        
+                    <div class="accordion">
+                        <div class="accordion-header">
+                            <b>Cutting Edge</b>
+                            <b class="toggle-symbol">+</b>
+                        </div>
+                        <p class="accordion-panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ea nemo explicabo blanditiis harum soluta magnam veritatis omnis eligendi laboriosam laborum, voluptas sapiente aut autem, in officiis delectus labore! Odio?</p>
+                    </div>
+                    
+                    <div class="accordion">
+                        <div class="accordion-header">
+                            <b>Customer-Oriented</b>
+                            <b class="toggle-symbol">+</b>
+                        </div>
+                        <p class="accordion-panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id repellat totam recusandae laborum, autem aliquam nostrum accusantium aut quisquam, earum amet. Voluptates, nostrum! Sequi sapiente reprehenderit quo minima amet explicabo!</p>
+                    </div>
+                    
+                    <div class="accordion">
+                        <div class="accordion-header">
+                            <b>Efficent</b>
+                            <b class="toggle-symbol">+</b>
+                        </div>
+                        <p class="accordion-panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi harum eos maxime praesentium inventore quis nostrum maiores laborum. Illum sapiente doloribus quod ex voluptas fugit, delectus itaque sed aperiam unde!</p>
+                    </div>
+                </div>
+                <!-- <p>What is the most sacred duty and the greatest source of our security in a Republic? An inviolable respect for the Constitution and Laws.</p>
+                <p>A promise must never be broken.</p> -->
+            </div>
+
+            <!-- <div class='air air1'></div>
+            <div class='air air2'></div>
+            <div class='air air3'></div>
+            <div class='air air4'></div> -->
+        </div>
+    </section>
+
+    
+    <!-- <section id="services-section">
+
+        <h1>Services</h1>
+
+        <div id="services-container">
+            <div class="card" style="width: 30%;">
+                <img class="card-img-top" src="images/forecasts.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 30%;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 30%;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="offer-assistant">
+        <h1>Offer Assistant</h1>
+        <div style="display: flex; flex-direction: row; justify-content: center;">
+            <div style="width: 66%;">
+                <div id="chat">
+                    <div id="chat-questionare"></div>
+                </div>
+            </div>
+            <div style="width: 33%; box-shadow: 4px;">
+                <img id="assistant-image" src="images/hamiltonassistant-grey.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="offers-section">
+        <h1>Offers</h1>
+
+        <div id="offers-wrapper">
+            <div class="offers-container">
+                <div class="card" style="width: 18%;">
+                    <img class="card-img-top" src="images/forecasts.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <button class="button-primary card-button" id="myBtn">Details</button>
+                </div>
+                <div class="card" style="width: 18%;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <button class="button-primary card-button">Details</button>
+                </div>
+                <div class="card" style="width: 18%;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <button class="button-primary card-button">Details</button>
+                </div>
+                <div class="card" style="width: 18%;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <button class="button-primary card-button">Details</button>
+                </div>
+                <div class="card" style="width: 18%;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <button class="button-primary card-button">Details</button>
+                </div>
+            </div>
+            <div class="offers-container">
+                <div class="card" style="width: 18%;">
+                    <img class="card-img-top" src="images/forecasts.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <button class="button-primary card-button">Details</button>
+                </div>
+                <div class="card" style="width: 18%;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <button class="button-primary card-button">Details</button>
+                </div>
+                <div class="card" style="width: 18%;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <button class="button-primary card-button">Details</button>
+                </div>
+                <div class="card" style="width: 18%;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <button class="button-primary card-button">Details</button>
+                </div>
+                <div class="card" style="width: 18%;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <button class="button-primary card-button">Details</button>
+                </div>
+            </div>
+            <div class="offers-container">
+                <div class="card" style="width: 18%;">
+                    <img class="card-img-top" src="images/forecasts.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <button class="button-primary card-button">Details</button>
+                </div>
+                <div class="card" style="width: 18%;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <button class="button-primary card-button">Details</button>
+                </div>
+                <div class="card" style="width: 18%;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <button class="button-primary card-button">Details</button>
+                </div>
+                <div class="card" style="width: 18%;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <button class="button-primary card-button">Details</button>
+                </div>
+                <div class="card" style="width: 18%;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <button class="button-primary card-button">Details</button>
+                </div>
+            </div>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Modal Header</h2>
+                </div>
+                <div class="modal-body">
+                    <p id="modal-text">Some text in the Modal Body</p>
+                </div>
+                <div class="modal-footer">
+                    <h3>Modal Footer</h3>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="register-section" style="display: flex; flex-direction: row; justify-content: center;">
+        <div style="width: 30%;">
+            <h1>Create an Account</h1>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                </div>
+                <button type="submit">Register</button>
+            </form>
+            <p class="text-center">Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </section>
+
+    
+
+    <footer>
+
+    </footer>
+
+    <script src="accordion/accordion.js"></script>
+    <script src="modal/modal.js"></script>
+    <script src="chat-questionare/chat-questionare.js"></script>
+</body>
+</html>

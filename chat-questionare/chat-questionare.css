@@ -1,0 +1,140 @@
+#chat-questionare {
+    width: 80%;
+    margin-left: 4em;
+}
+
+.chat-message-container {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.chat-message-wrapper {
+    width: 80%;
+    border-radius: 12px;   
+    background-color: #f4f4f4;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}
+
+.chat-questionare-message {
+    font-family: 'Noto Serif', serif; 
+    color: #222;   
+    padding: 1em 1em 0.5em 1.5em;
+    font-size: 16px;     
+    text-align: justify; 
+    hyphens: auto;   
+}
+
+.chat-message-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.chat-message-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.chat-message-border-radius-left {
+    border-bottom-left-radius: 0;
+}
+
+.chat-message-border-radius-right {
+    border-bottom-right-radius: 0;
+}
+
+/* https://css-tricks.com/snippets/css/typewriter-effect/ */
+.line-1 {
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.anim-typewriter {
+    animation: 
+        typewriter 4s steps(44) 1s 1 normal both,
+        blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter {
+    from{width: 0;}
+    to{width: 80%;}
+}
+
+.chat-choice-container {
+    width: 100%;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+/* https://codepen.io/Metty/pen/MWjOavR */
+.chat-choice-wrapper {
+    display: inline-flex;
+    background: #fff;
+    height: 5em;
+    width: 70%;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    padding: 20px 15px;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+}
+.chat-choice-wrapper .option{
+    background: #fff;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 10px;
+    border: 2px solid lightgrey;
+    transition: all 0.3s ease;
+}
+.chat-choice-wrapper .option .dot{
+    height: 20px;
+    width: 20px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+}
+.chat-choice-wrapper .option .dot::before{
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background: #0069d9;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+}
+input[type="radio"]{
+    display: none;
+}
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2{
+    border-color: #0069d9;
+    background: #0069d9;
+}
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot{
+    background: #fff;
+}
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before{
+    opacity: 1;
+    transform: scale(1);
+}
+.chat-choice-wrapper .option span{
+    font-size: 20px;
+    color: #808080;
+}
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span{
+    color: #fff;
+}

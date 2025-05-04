@@ -1,0 +1,40 @@
+.side-nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10; 
+}
+
+.nav-dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+.nav-dot:hover {
+    background-color: #fff;
+    box-sizing: border-box;
+    border: #7a7e85 solid 3px;
+}
+
+.nav-dot:active {
+    background-color: #000;
+}
+
+.side-nav::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    bottom: -200px;
+    right: 50%;
+    transform: translateX(50%); 
+    width: 2px;
+    background-color: #ddd;
+    z-index: -1; 
+}
