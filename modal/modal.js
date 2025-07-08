@@ -14,14 +14,12 @@ var offers = {
 }
 
 $('#exampleModal').on('show.bs.modal', function (event) {
-  var button = $(event.relatedTarget) // Button that triggered the modal
-  var offer = button.data('whatever') // Extract info from data-* attributes
-  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var button = $(event.relatedTarget)
+  var offer = button.data('whatever')
   var modal = $(this)
   modal.find('.modal-header h3').text(offer);
   modal.find('.modal-body p').text(offers[offer]);
-  document.body.style.paddingRight = '0px';
+  document.body.style.paddingRight = '0px'; // fix bug with screen shifting to left
 })
 
 
