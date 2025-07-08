@@ -1,6 +1,6 @@
 .side-nav {
     position: fixed;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
     right: 45px;
     display: flex;
@@ -30,8 +30,8 @@
 .side-nav::before {
     content: '';
     position: absolute;
-    top: -200px;
-    bottom: -200px;
+    top: -100px;
+    bottom: -150px;
     right: 50%;
     transform: translateX(50%); 
     width: 2px;

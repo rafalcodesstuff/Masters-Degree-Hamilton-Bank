@@ -1,6 +1,10 @@
 #chat-questionare {
+    height: 85vh;
     width: 80%;
+    overflow: auto;
     margin-left: 4em;
+    padding-bottom: 2em;
+    scrollbar-width: none;
 }
 
 .chat-message-container {
@@ -10,18 +14,18 @@
 
 .chat-message-wrapper {
     width: 80%;
-    border-radius: 12px;   
-    background-color: #f4f4f4;
+    border-radius: 12px;
+    background-color: #f3f5f6;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
 }
 
 .chat-questionare-message {
     font-family: 'Noto Serif', serif; 
-    color: #222;   
+    color: #7a7e85;
     padding: 1em 1em 0.5em 1.5em;
-    font-size: 16px;     
-    text-align: justify; 
-    hyphens: auto;   
+    font-size: 16px;
+    text-align: justify;
+    hyphens: auto;
 }
 
 .chat-message-left {
@@ -51,15 +55,15 @@
     overflow: hidden;
 }
 
-.anim-typewriter {
+/* .anim-typewriter {
     animation: 
         typewriter 4s steps(44) 1s 1 normal both,
         blinkTextCursor 500ms steps(44) infinite normal;
-}
-@keyframes typewriter {
+} */
+/* @keyframes typewriter {
     from{width: 0;}
     to{width: 80%;}
-}
+} */
 
 .chat-choice-container {
     width: 100%;
@@ -77,11 +81,11 @@
     align-items: center;
     justify-content: space-evenly;
     border-radius: 5px;
-    padding: 20px 15px;
+    padding: 3.5em 0.5em;
     box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
 }
 .chat-choice-wrapper .option{
-    background: #fff;
+    background: #f3f5f6;
     height: 4em;
     display: flex;
     align-items: center;
@@ -90,51 +94,24 @@
     border-radius: 5px;
     cursor: pointer;
     padding: 0 10px;
-    border: 2px solid lightgrey;
+    border: 2px solid #f3f5f6;
     transition: all 0.3s ease;
 }
-.chat-choice-wrapper .option .dot{
-    height: 20px;
-    width: 20px;
-    background: #d9d9d9;
-    border-radius: 50%;
-    position: relative;
-}
-.chat-choice-wrapper .option .dot::before{
-    position: absolute;
-    content: "";
-    top: 4px;
-    left: 4px;
-    width: 12px;
-    height: 12px;
-    background: #0069d9;
-    border-radius: 50%;
-    opacity: 0;
-    transform: scale(1.5);
-    transition: all 0.3s ease;
+.chat-choice-wrapper .option span{
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+    font-size: 14px;
+    color: #808080;
 }
 input[type="radio"]{
     display: none;
 }
-#option-1:checked:checked ~ .option-1,
-#option-2:checked:checked ~ .option-2{
+input[type="radio"]:checked + .option {
     border-color: #0069d9;
     background: #0069d9;
-}
-#option-1:checked:checked ~ .option-1 .dot,
-#option-2:checked:checked ~ .option-2 .dot{
-    background: #fff;
-}
-#option-1:checked:checked ~ .option-1 .dot::before,
-#option-2:checked:checked ~ .option-2 .dot::before{
     opacity: 1;
     transform: scale(1);
 }
-.chat-choice-wrapper .option span{
-    font-size: 20px;
-    color: #808080;
-}
-#option-1:checked:checked ~ .option-1 span,
-#option-2:checked:checked ~ .option-2 span{
+input[type="radio"]:checked + .option span{
     color: #fff;
 }
