@@ -97,6 +97,9 @@
     border: 2px solid #f3f5f6;
     transition: all 0.3s ease;
 }
+.chat-choice-wrapper .option:hover {
+    background-color: #e1e3e5;
+}
 .chat-choice-wrapper .option span{
     margin-left: 0.75em;
     margin-right: 0.75em;
